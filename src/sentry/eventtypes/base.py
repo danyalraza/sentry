@@ -28,6 +28,7 @@ class DefaultEvent(BaseEvent):
 
     def get_metadata(self):
         # See GH-3248
+        # TODO(ja): Merge this with GH-10621
         message_interface = self.data.get(
             'logentry', {
                 'message': self.data.get('message', ''),
